@@ -13,25 +13,45 @@ export default function Navbar() {
                         className="object-contain"
                     />
                     <div>
+
                         <p className="font-bold text-[color:var(--primary)]">
                             Brasilian Dogs
                         </p>
-                        
+
+                        <p className="text-xs tracking-wide text-[color:var(--text-muted)]">
+                            Peluquería Canina
+                        </p>
+
                     </div>
                 </div>
 
-                <ul className="hidden md:flex items-center gap-8">
-                    <li className="nav-link">Inicio</li>
-                    <li className="nav-link">Servicios</li>
-                    <li className="nav-link">Galería</li>
-                    <li className="nav-link">Contacto</li>
+                <ul className="hidden items-center gap-8 md:flex">
+                    <li>
+                        <a href="#home" className="nav-link">
+                            Inicio
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="#services" className="nav-link">
+                            Servicios
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="#gallery" className="nav-link">
+                            Galería
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" className="nav-link">
+                            Contacto
+                        </a>
+                    </li>
                 </ul>
 
-                <a href="#contact" className="btn-accent">
-                    Reservar
-                </a>
+
             </div>
         </nav>
     );
