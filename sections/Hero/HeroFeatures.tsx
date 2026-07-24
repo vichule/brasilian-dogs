@@ -1,38 +1,65 @@
+import {
+    HeartHandshake,
+    Sparkles,
+    Scissors,
+} from "lucide-react";
+
 const features = [
     {
-        icon: "🐾",
+        icon: HeartHandshake,
         title: "Trato cercano",
-        description: "Cada mascota es única y la cuidamos con paciencia y cariño.",
+        description:
+            "Cada mascota recibe un cuidado paciente, tranquilo y personalizado.",
     },
     {
-        icon: "🛁",
-        title: "Productos",
-        description: "Champús y tratamientos profesionales para una higiene de calidad.",
+        icon: Sparkles,
+        title: "Productos premium",
+        description:
+            "Trabajamos con champús y tratamientos profesionales de máxima calidad.",
     },
     {
-        icon: "✂️",
-        title: "Especialistas",
-        description: "Experiencia, precisión y un resultado impecable en cada visita.",
+        icon: Scissors,
+        title: "Acabado profesional",
+        description:
+            "Cortes adaptados a cada raza para conseguir el mejor resultado.",
     },
 ];
 
 export default function HeroFeatures() {
     return (
         <div className="mt-8 flex flex-col gap-4 sm:mt-10">
-            {features.map((feature) => (
-                <div
-                    key={feature.title}
-                    className="flex items-start gap-4 rounded-[24px] border border-[color:var(--border)] bg-[color:var(--surface)] px-5 py-4 shadow-sm sm:px-6 sm:py-5"
-                >
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[16px] bg-white text-2xl shadow-sm">
-                        <span>{feature.icon}</span>
+            {features.map((feature) => {
+
+                const Icon = feature.icon;
+
+                return (
+
+                    <div
+                        key={feature.title}
+                        className="feature-card"
+                    >
+
+                        <div className="icon-card">
+                            <Icon size={24} />
+                        </div>
+
+                        <div>
+
+                            <h3 className="feature-title">
+                                {feature.title}
+                            </h3>
+
+                            <p className="feature-description">
+                                {feature.description}
+                            </p>
+
+                        </div>
+
                     </div>
-                    <div>
-                        <p className="text-sm font-semibold text-[color:var(--primary)]">{feature.title}</p>
-                        <p className="mt-1 text-sm leading-6 text-[color:var(--text-muted)]">{feature.description}</p>
-                    </div>
-                </div>
-            ))}
+
+                );
+
+            })}
         </div>
     );
 }
