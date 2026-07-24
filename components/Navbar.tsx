@@ -1,25 +1,38 @@
+import Image from "next/image";
+
 export default function Navbar() {
-  return (
-    <nav className="border-b border-gray-200">
-      <div className="container-custom h-20 flex items-center justify-between">
-        <div>
-          <h1 className="text-xl font-bold">
-            Brasilian Dogs
-          </h1>
-        </div>
+    return (
+        <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+            <div className="container-custom flex h-20 items-center justify-between">
+                <div className="flex items-center gap-3">
+                    <Image
+                        src="/dogs.png"
+                        alt="Brasilian Dogs"
+                        width={56}
+                        height={56}
+                        className="object-contain"
+                    />
+                    <div>
+                        <p className="font-bold text-[color:var(--primary)]">
+                            Brasilian Dogs
+                        </p>
+                        
+                    </div>
+                </div>
 
-        <ul className="hidden md:flex gap-8">
-          <li>Inicio</li>
-          <li>Servicios</li>
-          <li>Galería</li>
-          <li>Nosotros</li>
-          <li>Contacto</li>
-        </ul>
+                <ul className="hidden md:flex items-center gap-8">
+                    <li className="nav-link">Inicio</li>
+                    <li className="nav-link">Servicios</li>
+                    <li className="nav-link">Galería</li>
+                    <li className="nav-link">Contacto</li>
 
-        <button className="px-4 py-2 rounded-lg">
-          Reservar
-        </button>
-      </div>
-    </nav>
-  );
+
+                </ul>
+
+                <a href="#contact" className="btn-accent">
+                    Reservar
+                </a>
+            </div>
+        </nav>
+    );
 }
