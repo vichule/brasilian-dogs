@@ -60,3 +60,34 @@ body {
 .section-padding {
   padding-block: 5rem;
 }
+
+.nav-link {
+  @apply font-medium transition-colors duration-200;
+  color: var(--text);
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.btn-primary {
+  @apply rounded-full px-5 py-2.5 font-medium transition-all duration-200;
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  @apply rounded-full px-5 py-2.5 font-medium transition-all duration-200;
+  background: var(--accent);
+  color: var(--primary);
+}
+
+.btn-accent:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}

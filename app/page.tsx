@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import Hero from "@/sections/Hero";
+import Hero from "@/sections/Hero/Hero";
 import Services from "@/sections/Services";
 import About from "@/sections/About";
 import Gallery from "@/sections/Gallery";
