@@ -38,7 +38,14 @@ export default function Footer() {
                             size={18}
                             className="text-[color:var(--accent)]"
                         />
-                        <span>Dirección</span>
+
+                        <a
+                            href="https://maps.google.com/?q=Carrer+Barcelona+27+Esparreguera"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Carrer Barcelona, 27 · 08292 Esparreguera, Barcelona
+                        </a>
                     </div>
 
                     <div className="flex items-center gap-3">
@@ -46,7 +53,10 @@ export default function Footer() {
                             size={18}
                             className="text-[color:var(--accent)]"
                         />
-                        <span>+34 600 000 000</span>
+
+                        <a href="tel:+34686625671">
+                            +34 686 62 56 71
+                        </a>
                     </div>
 
                     <div className="flex items-center gap-3">
@@ -54,7 +64,10 @@ export default function Footer() {
                             size={18}
                             className="text-[color:var(--accent)]"
                         />
-                        <span>info@brasiliandogs.es</span>
+
+                        <a href="mailto:info@brasiliandogs.es">
+                            info@brasiliandogs.es
+                        </a>
                     </div>
 
                 </div>

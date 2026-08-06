@@ -16,7 +16,7 @@ export default function HeroContent() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a href="#contact" className="btn-accent">
-                    Reservar cita
+                    Contactar
                 </a>
 
                 <a href="#services" className="btn-secondary">
